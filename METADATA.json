@@ -20,7 +20,8 @@
       "task_subtype": "semantic_segmentation"
     },
     "segmentation_type": "semantic_segmentation",
-    "task_subtype": "semantic_segmentation"
+    "task_subtype": "semantic_segmentation",
+    "label_taxonomy_version": "road_damage_v1"
   },
   "imaging_setup": {
     "camera": "Vehicle-mounted roadway imaging cameras",
@@ -47,7 +48,9 @@
           "id": 1,
           "name": "crack",
           "description": "EdmCrack600 class: crack",
-          "color": "#294F71"
+          "color": "#294F71",
+          "canonical_name": "crack",
+          "instances": 1648
         }
       ]
     }
@@ -67,9 +70,9 @@
     "split": {
       "data": {
         "n_images": 600,
-        "percentage": 1.0,
+        "percentage": 1,
         "n_images_with_annotations": 600,
-        "annotation_coverage": 1.0,
+        "annotation_coverage": 1,
         "dataset_size": "1.91 GB",
         "dataset_size_bytes": 2055102604,
         "dataset_file_count": 1200
@@ -82,7 +85,7 @@
         "name": "Canada",
         "image_count": 600,
         "annotated_image_count": 600,
-        "annotation_coverage": 1.0
+        "annotation_coverage": 1
       }
     ],
     "temporal_scope": "Published 2020"
@@ -99,7 +102,7 @@
       "role": "Dataset Creator"
     },
     {
-      "name": "Mohammad G\u00fcl",
+      "name": "Mohammad Gül",
       "affiliation": "University of Alberta",
       "role": "Dataset Creator"
     }
@@ -128,5 +131,31 @@
     "article_title": "A cost effective solution for pavement crack inspection using cameras and deep neural networks",
     "journal": "Construction and Building Materials",
     "year": 2020
+  },
+  "class_taxonomy": {
+    "version": "road_damage_v1",
+    "classes": [
+      {
+        "canonical_name": "crack",
+        "display_name": "Crack",
+        "damage_family": "crack",
+        "damage_subtype": "generic",
+        "role": "damage_target",
+        "is_damage_target": true,
+        "aliases": [
+          "crack",
+          "cracked"
+        ],
+        "source_labels": [
+          "crack"
+        ],
+        "taxonomy_source": "registry",
+        "taxonomy_unresolved": false
+      }
+    ],
+    "damage_types": [
+      "crack"
+    ],
+    "unresolved_labels": []
   }
 }
