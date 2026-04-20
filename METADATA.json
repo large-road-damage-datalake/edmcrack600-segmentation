@@ -102,7 +102,7 @@
       "role": "Dataset Creator"
     },
     {
-      "name": "Mohammad Gül",
+      "name": "Mohammad G\u00fcl",
       "affiliation": "University of Alberta",
       "role": "Dataset Creator"
     }
@@ -133,7 +133,7 @@
     "year": 2020
   },
   "class_taxonomy": {
-    "version": "road_damage_v1",
+    "version": "road_damage_v2",
     "classes": [
       {
         "canonical_name": "crack",
@@ -141,6 +141,9 @@
         "damage_family": "crack",
         "damage_subtype": "generic",
         "role": "damage_target",
+        "semantic_role": "damage",
+        "training_role": "target",
+        "status": "stable",
         "is_damage_target": true,
         "aliases": [
           "crack",
@@ -149,8 +152,10 @@
         "source_labels": [
           "crack"
         ],
-        "taxonomy_source": "registry",
-        "taxonomy_unresolved": false
+        "taxonomy_source": "codebook",
+        "taxonomy_unresolved": false,
+        "mapping_type": "codebook-based",
+        "mapping_confidence": "high"
       }
     ],
     "damage_types": [
