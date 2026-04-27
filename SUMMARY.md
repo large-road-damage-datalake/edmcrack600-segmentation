@@ -4,7 +4,7 @@
 - Source dataset: EdmCrack600
 - Task: segmentation
 - Image count: 600
-- Annotation count: 1648
+- Annotation count: 1607
 - Class setup: 1 (crack)
 
 Primary reference:

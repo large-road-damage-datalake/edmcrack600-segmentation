@@ -7,7 +7,7 @@
 
 ## Source Paper
 
-- https://www.researchgate.net/publication/341253649_A_cost_effective_solution_for_pavement_crack_inspection_using_cameras_and_deep_neural_networks
+- https://www.sciencedirect.com/science/article/abs/pii/S0950061820314021?via%3Dihub
 
 ## Package Repository
 
